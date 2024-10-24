@@ -6,9 +6,9 @@ public class Moneda extends ElementoColeccionable{
     private double peso;
     private double diametro;
     private double grosor;
-    private EstadoConservacion estadoConservacion;
+    private EstadoConservacionM estadoConservacion;
 
-    public Moneda(String pais, String autoridadGobernamte, int annus, double valor, String unidadMonetaria, int rareza, double precio, String composicion, double peso, double diametro, double grosor, EstadoConservacion estadoConservacion) {
+    public Moneda(String pais, String autoridadGobernamte, int annus, double valor, String unidadMonetaria, int rareza, double precio, String composicion, double peso, double diametro, double grosor, EstadoConservacionM estadoConservacion) {
         super(pais, autoridadGobernamte, annus, valor, unidadMonetaria, rareza, precio);
         this.composicion = composicion;
         this.peso = peso;

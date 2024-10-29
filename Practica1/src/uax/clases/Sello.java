@@ -14,4 +14,9 @@ public class Sello extends ElementoColeccionable{
         this.imagen = imagen;
         this.estadoConservacion = estadoConservacion;
     }
+
+    @Override
+    public String toString() {
+        return "Sello {" + " Pais: " + pais + ", Autoridad Gobernante: " + autoridadGobernamte + ", Ano: " + annus + ", Valor: " + valor + ", unidadMonetaria: " + unidadMonetaria + ", Rareza: " + rareza + ", Precio: " + precio + ", Altura: " + altura + ", Anchura: " + anchura + ", Imagen: " + imagen + ", estadoConservacion=" + estadoConservacion + '}';
+    }
 }

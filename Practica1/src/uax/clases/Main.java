@@ -23,9 +23,9 @@ public class Main {
             System.out.println("6. Mostrar la rareza media de la colección");
             System.out.println("0. Salir");
 
+            System.out.println("Introduce una opción: ");
 
             int opcion = sc.nextInt();
-
 
             switch (opcion) {
                 case 1:
@@ -39,8 +39,13 @@ public class Main {
                     double valor = sc.nextDouble();
                     System.out.println("Introduce la unidad monetaria");
                     String unidadMonetaria = sc.next();
-                    System.out.println("Introduce la rareza");
+                    System.out.println("Introduce la rareza (0 - 100)");
                     int rareza = sc.nextInt();
+
+                    while (rareza < 0 || rareza > 100) {
+                        System.out.println("Introduce la rareza (0 - 100)");
+                        rareza = sc.nextInt();
+                    }
                     System.out.println("Introduce el precio");
                     double precio = sc.nextDouble();
                     System.out.println("Introduce la composición");
@@ -52,7 +57,7 @@ public class Main {
                     System.out.println("Introduce el grosor");
                     double grosor = sc.nextDouble();
                     System.out.println("Introduce el estado de conservación (G, VG, F, VF, XF, AU, UNC)");
-                    EstadoConservacionM estadoConservacion = EstadoConservacionM.valueOf(sc.next());
+                    EstadoConservacionM estadoConservacion = EstadoConservacionM.valueOf(sc.next().toUpperCase());
 
                     Moneda moneda = new Moneda(pais, autoridadGobernamte, annus, valor, unidadMonetaria, rareza, precio, composicion, peso, diametro, grosor, estadoConservacion);
                     coleccion.addMoneda(moneda);
@@ -68,8 +73,14 @@ public class Main {
                     valor = sc.nextDouble();
                     System.out.println("Introduce la unidad monetaria");
                     unidadMonetaria = sc.next();
-                    System.out.println("Introduce la rareza");
+                    System.out.println("Introduce la rareza (0 - 100)");
                     rareza = sc.nextInt();
+
+                    while (rareza < 0 || rareza > 100) {
+                        System.out.println("Introduce la rareza (0 - 100)");
+                        rareza = sc.nextInt();
+                    }
+                    
                     System.out.println("Introduce el precio");
                     precio = sc.nextDouble();
                     System.out.println("Introduce la altura");

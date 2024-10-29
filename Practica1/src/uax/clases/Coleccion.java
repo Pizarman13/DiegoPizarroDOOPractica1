@@ -19,6 +19,10 @@ public class Coleccion {
     }
 
     public void mostrarMonedas() {
+        if (elementos.isEmpty()) {
+            System.out.println("No hay monedas en la colección");
+        }
+
         for (ElementoColeccionable elemento : elementos) {
             if (elemento instanceof Moneda) {
                 Moneda moneda = (Moneda) elemento;
@@ -28,6 +32,10 @@ public class Coleccion {
     }
 
     public void mostrarSellos() {
+        if (elementos.isEmpty()) {
+            System.out.println("No hay sellos en la colección");
+        }
+
         for (ElementoColeccionable elemento : elementos) {
             if (elemento instanceof Sello) {
                 Sello sello = (Sello) elemento;
@@ -49,6 +57,11 @@ public class Coleccion {
         for (ElementoColeccionable elemento : elementos) {
             rareza += elemento.rareza;
         }
+
+        if (elementos.isEmpty()) {
+            return 0;
+        }
+
         return rareza / elementos.size();
     }
 

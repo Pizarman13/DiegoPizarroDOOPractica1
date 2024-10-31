@@ -80,7 +80,7 @@ public class Main {
                         System.out.println("Introduce la rareza (0 - 100)");
                         rareza = sc.nextInt();
                     }
-                    
+
                     System.out.println("Introduce el precio");
                     precio = sc.nextDouble();
                     System.out.println("Introduce la altura");

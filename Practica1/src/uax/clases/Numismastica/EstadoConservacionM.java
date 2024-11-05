@@ -1,3 +1,3 @@
-package uax.clases;
+package uax.clases.Numismastica;
 
 public enum EstadoConservacionM { G, VG, F, VF, XF, AU, UNC }

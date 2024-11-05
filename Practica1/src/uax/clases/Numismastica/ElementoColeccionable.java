@@ -1,4 +1,4 @@
-package uax.clases;
+package uax.clases.Numismastica;
 
 public abstract class ElementoColeccionable {
 
@@ -18,5 +18,13 @@ public abstract class ElementoColeccionable {
         this.unidadMonetaria = unidadMonetaria;
         this.rareza = rareza;
         this.precio = precio;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public int getRareza() {
+        return rareza;
     }
 }

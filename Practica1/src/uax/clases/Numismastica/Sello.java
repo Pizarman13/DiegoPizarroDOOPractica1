@@ -1,6 +1,6 @@
-package uax.clases;
+package uax.clases.Numismastica;
 
-public class Sello extends ElementoColeccionable{
+public class Sello extends ElementoColeccionable {
 
     private double altura;
     private double anchura;

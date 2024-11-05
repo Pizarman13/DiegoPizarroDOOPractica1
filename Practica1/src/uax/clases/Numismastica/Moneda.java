@@ -1,6 +1,6 @@
-package uax.clases;
+package uax.clases.Numismastica;
 
-public class Moneda extends ElementoColeccionable{
+public class Moneda extends ElementoColeccionable {
 
     private String composicion;
     private double peso;
